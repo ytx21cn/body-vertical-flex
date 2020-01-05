@@ -1,3 +1,13 @@
+@import url("Roboto.css");
+
+html {
+	font-family: Roboto, sans-serif;
+}
+
+.page-heading {
+	margin: 0 auto;
+}
+
 @media only screen {
 	body {
 		position: fixed;
@@ -21,5 +31,11 @@
 	main {
 		overflow: auto;
 		padding: 1em;
+	}
+}
+
+@media only print {
+	section {
+		page-break-inside: avoid;
 	}
 }
